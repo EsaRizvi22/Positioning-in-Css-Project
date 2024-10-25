@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+            /* For demonstration purposes */
+        }
+
+        .static {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 20px;
+            /* Static is the default, no need to specify */
+        }
+
+        .fixed {
+            background-color: lightgreen;
+            padding: 10px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        .relative {
+            background-color: lightcoral;
+            padding: 10px;
+            position: relative;
+            left: 20px;
+            /* Moves right from its original position */
+        }
+
+        .absolute {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            position: absolute;
+            top: 150px;
+            /* Moves down from the top */
+            left: 20px;
+            /* Moves right from the left */
+        }
+
+        .sticky {
+            background-color: lightpink;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            /* Sticks to the top when scrolling */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">This Is Static.</div>
+    <div class="fixed">This Is Fixed.</div>
+    <div class="relative">This Is Relative.</div>
+    <div class="absolute">This Is Absolute.</div>
+    <div class="sticky">This Is Sticky</div>
+
+    <h1>Welcome to my page</h1>
+    <p>Theese are the types of positioning in Css</p>
+    <p>There are: <br>1.static<br>2.relative<br>3.sticky<br>4.fixed <br>5.and absolute positioning.
+    </p>
+</body>
+
+</html>
